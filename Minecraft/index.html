@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/41d5f40ef0.js" crossorigin="anonymous"></script>
+    <title id="titleMain">Minecraft 2D - By Arav</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="bg0">
+            <div class="info">
+                <p>
+                    Welcome to Minecraft 2D. <br>
+                <h1 id="status"></h1>
+                </p>
+                <a href="index2.html"> <button id="forward">Continue</button> </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Warning Alert
+        setInterval(() => {
+            if (window.innerHeight > window.innerWidth) {
+                document.getElementById("status").innerHTML = "PLEASE ROTATE YOUR DEVICE TO CONTINUE!!";
+                document.getElementById("forward").style.display = "none";
+                document.getElementById("status").style.color = "red";
+            }
+
+            else {
+                document.getElementById("status").innerHTML = "CLICK ON CONTINUE TO PLAY";
+                document.getElementById("forward").style.display = "block";
+                document.getElementById("status").style.color = "green";
+            }
+        }, 10);
+    </script>
+    <script src="assets/common-text.js"></script>
+</body>
+
+</html>

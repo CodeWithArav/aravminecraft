@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html onclick="Jump()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <title id="titleMain">Minecraft 2D - By Arav</title>
+</head>
+
+<body>
+    <div class="container2" id="loding2">
+        <div class="start">
+            <h1>Get Ready!!</h1>
+            <button onclick="startBtn()" id="startBtn">START</button>
+        </div>
+        <div class="img"></div>
+        <div class="steve"></div>
+        <div class="steve2"></div>
+        <div class="steve3"></div>
+        <div class="cactus"></div>
+        <div class="diamond"></div>
+        <div class="diamondCollect">
+            <h1>+5 Score</h1>
+        </div>
+        <div class="sun"></div>
+        <div class="inventoryHolder"></div>
+        <div class="inventory1 inventoryMain">
+            <div class="countBar cb1"></div>
+        </div>
+        <div class="inventory2 inventoryMain">
+            <div class="countBar cb2"></div>
+        </div>
+        <div class="inventory3 inventoryMain">
+            <div class="countBar cb3"></div>
+        </div>
+        <div class="inventory4 inventoryMain">
+            <div class="countBar cb4"></div>
+        </div>
+        <div class="inventory5 inventoryMain">
+            <div class="countBar cb5"></div>
+        </div>
+        <div class="inventory6 inventoryMain">
+            <div class="countBar cb6"></div>
+        </div>
+        <div class="mobileInventory">
+            <div class="inventory1s inventoryMain2">
+                <div class="countBar2 cb1s"></div>
+            </div>
+            <div class="inventory2s inventoryMain2">
+                <div class="countBar2 cb2s"></div>
+            </div>
+            <div class="inventory3s inventoryMain2">
+                <div class="countBar2 cb3s"></div>
+            </div>
+            <div class="inventory4s inventoryMain2">
+                <div class="countBar2 cb4s"></div>
+            </div>
+            <div class="inventory5s inventoryMain2">
+                <div class="countBar2 cb5s"></div>
+            </div>
+            <div class="inventory6s inventoryMain2">
+                <div class="countBar2 cb6s"></div>
+            </div>
+            <div class="exitInventory">
+                <img src="../images/close.png" id="inventoryImg" onclick="backInventory()">
+            </div>
+        </div>
+        <div class="cloud"></div>
+        <div class="cloud2"></div>
+        <div class="ground"></div>
+        <div class="ground2"></div>
+        <div class="gameOver">
+            <h1>Game Over!!</h1>
+            <button id="restart" onclick="restart()">Restart</button>
+        </div>
+        <div class="score">
+            <p>Total Score: 0</p>
+        </div>
+        <div class="back" id="back">
+            <img src="../images/menu.png" id="menuImg" onclick="backBtn()">
+        </div>
+        <div class="menu">
+            <a href="../index2.html"> <button id="mainScreen" class="btnPauseStyle">QUIT</button> </a>
+            <button id="viewInventory" class="btnPauseStyle" onclick="viewInventory()">View Inventory</button>
+        </div>
+        <div class="status">
+            <h1 class="statusInfo">PLEASE ROTATE YOUR DEVICE!!!</h1>
+            <button class="statusBtn" onclick="widthOk()">CONTINUE</button>
+        </div>
+    </div>
+    <script src="game-logic.js"></script>
+
+    <script src="common-text.js"></script>
+</body>
+
+</html>
