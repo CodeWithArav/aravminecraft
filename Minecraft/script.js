@@ -42,6 +42,6 @@ setTimeout(() => {
     logo.style.display = "block";
     btn1.style.display = "inline-block";
     btn2.style.display = "inline-block";
-    btn3.style.display = "inline-block";
+    // btn3.style.display = "inline-block";
 
 }, 1600);
